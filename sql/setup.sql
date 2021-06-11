@@ -8,3 +8,12 @@ CREATE TABLE dogs (
 );
 
 
+DROP TABLE IF EXISTS plants;
+
+CREATE TABLE plants (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT,
+  type TEXT,
+  sun TEXT
+);
+
