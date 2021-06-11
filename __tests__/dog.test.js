@@ -85,7 +85,7 @@ describe('dog routes', () => {
     const res = await request(app)
       .delete(`/api/v1/dogs/${dog.id}`);
 
-    expect(res.body).toEqual('Delete Successful');
+    expect(res.body).toEqual({ status: 'success', message: 'delete success' });
   });
 
 });
