@@ -17,3 +17,11 @@ CREATE TABLE plants (
   sun TEXT
 );
 
+DROP TABLE IF EXISTS fruits;
+
+CREATE TABLE fruits (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT,
+  color TEXT
+);
+
