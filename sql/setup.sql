@@ -25,3 +25,12 @@ CREATE TABLE fruits (
   color TEXT
 );
 
+DROP TABLE IF EXISTS cats;
+
+CREATE TABLE cats (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT,
+  type TEXT,
+  color TEXT
+);
+
