@@ -34,3 +34,12 @@ CREATE TABLE cats (
   color TEXT
 );
 
+DROP TABLE IF EXISTS flowers;
+
+CREATE TABLE flowers (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  common_name TEXT,
+  genus TEXT,
+  type TEXT
+);
+
